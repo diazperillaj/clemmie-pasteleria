@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Courier Prime', monospace;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.03em;
+    font-weight: 300;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+}
+
+@layer utilities {
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .duration-400 {
+    transition-duration: 400ms;
+  }
+  .duration-800 {
+    transition-duration: 800ms;
+  }
+}
